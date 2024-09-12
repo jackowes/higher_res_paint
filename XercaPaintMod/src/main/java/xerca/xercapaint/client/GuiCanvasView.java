@@ -36,7 +36,7 @@ public class GuiCanvasView extends Screen {
         super(title);
 
         this.canvasType = canvasType;
-        this.canvasPixelScale = canvasType == CanvasType.SMALL ? 10 : 5;
+        this.canvasPixelScale = canvasType == CanvasType.SMALL ? 5.0f : 2.5f;
         this.canvasPixelWidth = CanvasType.getWidth(canvasType);
         this.canvasPixelHeight = CanvasType.getHeight(canvasType);
         int canvasPixelArea = canvasPixelHeight*canvasPixelWidth;
