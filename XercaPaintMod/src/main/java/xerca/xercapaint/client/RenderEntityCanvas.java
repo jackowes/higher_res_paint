@@ -156,8 +156,8 @@ public class RenderEntityCanvas extends EntityRenderer<EntityCanvas> {
         }
 
         public void render(@Nullable EntityCanvas canvas, float yaw, float pitch, PoseStack ms, MultiBufferSource buffer, Direction facing, int packedLight) {
-            final float wScale = width/16.0f;
-            final float hScale = height/16.0f;
+            final float wScale = width/32.0f;
+            final float hScale = height/32.0f;
 
             ms.pushPose();
             Matrix3f mn = ms.last().normal();
