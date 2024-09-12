@@ -202,8 +202,8 @@ public class EntityCanvas extends HangingEntity implements IEntityAdditionalSpaw
             double d3 = (double)this.pos.getZ() + 0.5D - (double)this.direction.getStepZ() * 0.46875D;
 
             if(this.direction.getAxis().isHorizontal()){
-                double d4 = this.offs(this.getWidth());
-                double d5 = this.offs(this.getHeight());
+                double d4 = this.offs(this.getWidth() / 2);
+                double d5 = this.offs(this.getHeight() / 2);
                 d2 = d2 + d5;
                 Direction direction = this.direction.getCounterClockWise();
                 d1 = d1 + d4 * (double)direction.getStepX();
@@ -211,9 +211,9 @@ public class EntityCanvas extends HangingEntity implements IEntityAdditionalSpaw
             }
 
             this.setPosRaw(d1, d2, d3);
-            double d6 = this.getWidth()-2;
-            double d7 = this.getHeight()-2;
-            double d8 = this.getWidth()-2;
+            double d6 = (this.getWidth() / 2)-2;
+            double d7 = (this.getHeight() / 2)-2;
+            double d8 = (this.getWidth() / 2)-2;
             Direction.Axis direction$axis = this.direction.getAxis();
             switch (direction$axis) {
                 case X -> d6 = 1.0D;
