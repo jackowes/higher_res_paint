@@ -97,7 +97,7 @@ public class GuiCanvasEdit extends BasePalette {
         updateCount = 0;
 
         this.canvasType = canvasType;
-        this.canvasPixelScale = canvasType == CanvasType.SMALL ? 10 : 5;
+        this.canvasPixelScale = canvasType == CanvasType.SMALL ? 5.0f : 2.5f;
         this.canvasPixelWidth = CanvasType.getWidth(canvasType);
         this.canvasPixelHeight = CanvasType.getHeight(canvasType);
         int canvasPixelArea = canvasPixelHeight*canvasPixelWidth;
